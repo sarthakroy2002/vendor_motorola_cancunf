@@ -1,7 +1,8 @@
 on boot && property:ro.vendor.hw.nfc=samsung
-    start vendor.sec_nfc_hal_service
+    start vendor.samsung_nfc_hal_service
 
-service vendor.sec_nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service.sec
+service vendor.samsung_nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service.samsung
+    override
     class hal
     user nfc
     group nfc

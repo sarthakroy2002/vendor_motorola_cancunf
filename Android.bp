@@ -47630,41 +47630,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "nfc_nci_sec",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/nfc_nci_sec.so",
-            ],
-            shared_libs: [
-                "android.hardware.nfc@1.0",
-                "android.hardware.nfc@1.1",
-                "android.hardware.nfc@1.2",
-                "libbase",
-                "libcutils",
-                "libhardware",
-                "libhardware_legacy",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcrypto",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "se_extn_client",
     owner: "motorola",
     strip: {
@@ -50146,42 +50111,6 @@ cc_prebuilt_binary {
                 "libnativewindow",
                 "libutils",
                 "libneuralnetworks_sl_driver_mtk_prebuilt",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.nfc@1.2-service.sec",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.nfc@1.2-service.sec",
-            ],
-            shared_libs: [
-                "nfc_nci_sec",
-                "android.hardware.nfc@1.0",
-                "android.hardware.nfc@1.1",
-                "android.hardware.nfc@1.2",
-                "libbase",
-                "libcutils",
-                "libhardware",
-                "liblog",
-                "libutils",
-                "libhidlbase",
-                "libcrypto",
                 "libc++",
                 "libc",
                 "libm",

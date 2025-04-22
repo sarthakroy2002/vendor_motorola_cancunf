@@ -1651,7 +1651,6 @@ PRODUCT_PACKAGES += \
     libstereoinfoaccessor_vsdof \
     libvainr_model \
     libmtkcam_streaminfo_plugin-p1stt \
-    nfc_nci_sec \
     se_extn_client \
     sensors.moto \
     libmsstwrapper \
@@ -1755,7 +1754,6 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.memtrack-service.mediatek \
     android.hardware.neuralnetworks-shim-service-mtk \
-    android.hardware.nfc@1.2-service.sec \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint-service.trustonic \
     chipone_ident \
