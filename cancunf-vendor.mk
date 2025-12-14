@@ -1465,6 +1465,7 @@ PRODUCT_PACKAGES += \
     libspeech_enh_lib \
     libspeechparser_vendor \
     libstfactory-vendor \
+    libtinyxml2-legacy \
     libtlcWidevineModularDrm \
     libtrm \
     libundistort_impl \
