@@ -49517,11 +49517,12 @@ cc_prebuilt_binary {
     name: "gsm0710muxd",
     owner: "motorola",
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
                 "proprietary/vendor/bin/gsm0710muxd",
             ],
             shared_libs: [
+                "libcutils",
                 "libmtkcutils",
                 "libmtkrillog",
                 "libmtkproperty",
@@ -49532,7 +49533,7 @@ cc_prebuilt_binary {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     strip: {
         none: true,
     },
