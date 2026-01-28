@@ -48961,38 +48961,6 @@ android_app_import {
 }
 
 dex_import {
-    name: "mediatek-common",
-    owner: "motorola",
-    jars: [
-        "proprietary/system/framework/mediatek-common.jar",
-    ],
-}
-
-dex_import {
-    name: "mediatek-framework",
-    owner: "motorola",
-    jars: [
-        "proprietary/system/framework/mediatek-framework.jar",
-    ],
-}
-
-dex_import {
-    name: "mediatek-ims-base",
-    owner: "motorola",
-    jars: [
-        "proprietary/system/framework/mediatek-ims-base.jar",
-    ],
-}
-
-dex_import {
-    name: "mediatek-ims-oem-plugin",
-    owner: "motorola",
-    jars: [
-        "proprietary/system/framework/mediatek-ims-oem-plugin.jar",
-    ],
-}
-
-dex_import {
     name: "moto-telephony",
     owner: "motorola",
     jars: [
@@ -49014,6 +48982,24 @@ dex_import {
     owner: "motorola",
     jars: [
         "proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "mediatek-ims-base",
+    owner: "motorola",
+    jars: [
+        "proprietary/system_ext/framework/mediatek-ims-base.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "mediatek-ims-oem-plugin",
+    owner: "motorola",
+    jars: [
+        "proprietary/system_ext/framework/mediatek-ims-oem-plugin.jar",
     ],
     system_ext_specific: true,
 }

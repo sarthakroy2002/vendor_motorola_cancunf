@@ -1683,13 +1683,11 @@ PRODUCT_PACKAGES += \
     MobileFeliCaClient \
     ImsService \
     MtkGbaService \
-    mediatek-common \
-    mediatek-framework \
-    mediatek-ims-base \
-    mediatek-ims-oem-plugin \
     moto-telephony \
     com.fingerprints.extension \
     com.android.hotwordenrollment.common.util \
+    mediatek-ims-base \
+    mediatek-ims-oem-plugin \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.security.keymint-service.trustonic.xml \
     android.hardware.security.secureclock-service.trustonic.xml \
