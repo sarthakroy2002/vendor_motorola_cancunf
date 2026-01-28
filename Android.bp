@@ -36204,34 +36204,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libvcodec_utility_plat.mt6789",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libvcodec_utility_plat.mt6789.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libvcodec_utility",
-                "libmtk_drvb",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libvcodec_utility_plat.mt6855",
     owner: "motorola",
     strip: {
@@ -36241,34 +36213,6 @@ cc_prebuilt_library_shared {
         android_arm: {
             srcs: [
                 "proprietary/vendor/lib/libvcodec_utility_plat.mt6855.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libvcodec_utility",
-                "libmtk_drvb",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvcodec_utility_plat.mt6879",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libvcodec_utility_plat.mt6879.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -49432,33 +49376,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "fpc_tee_test",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/fpc_tee_test",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libMcClient",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "fuelgauged",
     owner: "motorola",
     target: {
@@ -51194,35 +51111,6 @@ cc_prebuilt_binary {
                 "libhardware_legacy",
                 "libcrypto",
                 "libnetutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vpud",
-    owner: "motorola",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/vpud",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libvpud_vcodec",
-                "libvcodec_utility",
-                "liblog",
-                "libaedv",
                 "libc++",
                 "libc",
                 "libm",

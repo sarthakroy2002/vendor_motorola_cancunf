@@ -334,20 +334,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/firmware/aw87xxx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw87xxx_acf.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/cps4035.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cps4035.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/fm_cust.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/fm_cust.cfg \
-    vendor/motorola/cancunf/proprietary/vendor/firmware/mt6627_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6627_fm_v1_coeff.bin \
-    vendor/motorola/cancunf/proprietary/vendor/firmware/mt6627_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6627_fm_v1_patch.bin \
-    vendor/motorola/cancunf/proprietary/vendor/firmware/mt6630_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6630_fm_v1_coeff.bin \
-    vendor/motorola/cancunf/proprietary/vendor/firmware/mt6630_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6630_fm_v1_patch.bin \
-    vendor/motorola/cancunf/proprietary/vendor/firmware/mt6630_fm_v2_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6630_fm_v2_coeff.bin \
-    vendor/motorola/cancunf/proprietary/vendor/firmware/mt6630_fm_v2_coeff_tx.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6630_fm_v2_coeff_tx.bin \
-    vendor/motorola/cancunf/proprietary/vendor/firmware/mt6630_fm_v2_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6630_fm_v2_patch.bin \
-    vendor/motorola/cancunf/proprietary/vendor/firmware/mt6630_fm_v2_patch_tx.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6630_fm_v2_patch_tx.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/mt6631_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6631_fm_v1_coeff.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/mt6631_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6631_fm_v1_patch.bin \
-    vendor/motorola/cancunf/proprietary/vendor/firmware/mt6632_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6632_fm_v1_coeff.bin \
-    vendor/motorola/cancunf/proprietary/vendor/firmware/mt6632_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6632_fm_v1_patch.bin \
-    vendor/motorola/cancunf/proprietary/vendor/firmware/mt6635_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6635_fm_v1_coeff.bin \
-    vendor/motorola/cancunf/proprietary/vendor/firmware/mt6635_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6635_fm_v1_patch.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/novatek_ts_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_fw.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/novatek_ts_mp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_mp.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/remoteproc_scp:$(TARGET_COPY_OUT_VENDOR)/firmware/remoteproc_scp \
@@ -363,7 +351,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/firmware/soc_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc_fm_v1_coeff.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/soc_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc_fm_v1_patch.bin \
     vendor/motorola/cancunf/proprietary/vendor/firmware/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
-    vendor/motorola/cancunf/proprietary/vendor/firmware/valhall-1691526.wa:$(TARGET_COPY_OUT_VENDOR)/firmware/valhall-1691526.wa \
     vendor/motorola/cancunf/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
     vendor/motorola/cancunf/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg
 
@@ -1297,9 +1284,7 @@ PRODUCT_PACKAGES += \
     libmp4enc_sa.ca7 \
     librcs_interface \
     librcs_volte_core \
-    libvcodec_utility_plat.mt6789 \
     libvcodec_utility_plat.mt6855 \
-    libvcodec_utility_plat.mt6879 \
     libvp8dec_sa.ca7 \
     libvp8enc_sa.ca7 \
     libvp9dec_sa.ca7 \
@@ -1730,7 +1715,6 @@ PRODUCT_PACKAGES += \
     ccci_mdinit \
     ccci_rpcd \
     conninfra_loader \
-    fpc_tee_test \
     fuelgauged \
     fuelgauged_nvram \
     gsm0710muxd \
@@ -1794,7 +1778,6 @@ PRODUCT_PACKAGES += \
     vendor.mmi.cxp \
     volte_clientapi_ua \
     volte_rcs_ua \
-    vpud \
     wifi_dump \
     wifitest \
     wlan_assistant \
