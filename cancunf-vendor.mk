@@ -1459,7 +1459,6 @@ PRODUCT_PACKAGES += \
     libviagpsrpc \
     libviamipc-ril \
     libvpu \
-    libwifi-hal-mtk \
     libwifitest \
     libwpfa \
     libwvhidl \
