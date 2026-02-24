@@ -1047,7 +1047,6 @@ PRODUCT_PACKAGES += \
     libSQLiteModule_VER_ALL \
     lib_ainr_enh \
     libaal_key \
-    libaedv \
     libappgamepq \
     libapu_mdw \
     libapu_mdw_batch \
