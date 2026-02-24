@@ -1638,8 +1638,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.apuware.hmp@1.0_vendor \
     vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.audio@7.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
     vendor.mediatek.hardware.camera.ccap@1.0 \
     vendor.mediatek.hardware.camera.frhandler@1.0 \
     vendor.mediatek.hardware.camera.isphal@1.0 \
