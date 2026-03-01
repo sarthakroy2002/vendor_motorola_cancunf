@@ -37510,7 +37510,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.videotelephony@1.0-impl",
+    name: "vendor.mediatek.hardware.videotelephony-impl",
     owner: "motorola",
     strip: {
         none: true,
@@ -37518,12 +37518,12 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so",
+                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.videotelephony-impl.so",
             ],
             shared_libs: [
-                "libhidlbase",
+                "libbinder_ndk",
                 "libfmq",
-                "vendor.mediatek.hardware.videotelephony@1.0_vendor",
+                "vendor.mediatek.hardware.videotelephony-V1-ndk",
                 "libc",
                 "libutils",
                 "libcutils",
@@ -48132,8 +48132,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.videotelephony@1.0_vendor",
-    stem: "vendor.mediatek.hardware.videotelephony@1.0",
+    name: "vendor.mediatek.hardware.videotelephony-V1-ndk_vendor",
+    stem: "vendor.mediatek.hardware.videotelephony-V1-ndk",
     owner: "motorola",
     strip: {
         none: true,
@@ -48141,13 +48141,12 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so",
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so",
             ],
             shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -52470,12 +52469,12 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "vtservice_hidl",
+    name: "vtservice_aidl",
     owner: "motorola",
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/bin/hw/vtservice_hidl",
+                "proprietary/vendor/bin/hw/vtservice_aidl",
             ],
             shared_libs: [
                 "libutils",
@@ -52483,11 +52482,9 @@ cc_prebuilt_binary {
                 "liblog",
                 "libbase",
                 "libfmq",
-                "vendor.mediatek.hardware.videotelephony@1.0_vendor",
-                "libhardware",
-                "libhwbinder",
-                "libhidlbase",
-                "libhidltransport",
+                "vendor.mediatek.hardware.videotelephony-V1-ndk",
+                "vendor.mediatek.hardware.videotelephony-impl",
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
