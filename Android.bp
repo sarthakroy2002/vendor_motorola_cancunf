@@ -52569,34 +52569,6 @@ sh_binary {
 }
 
 cc_prebuilt_binary {
-    name: "ipsec_mon",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/ipsec_mon",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libforkexecwrap",
-                "libifcutils_mtk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "kpgather",
     owner: "motorola",
     target: {
@@ -52907,37 +52879,6 @@ cc_prebuilt_binary {
             shared_libs: [
                 "libmtkrillog",
                 "libmtkproperty",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "netdagent",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/netdagent",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libforkexecwrap",
-                "libutils",
-                "libhidlbase",
-                "libifcutils_mtk",
-                "vendor.mediatek.hardware.netdagent@1.0",
                 "libc++",
                 "libc",
                 "libm",

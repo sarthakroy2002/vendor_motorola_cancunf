@@ -259,15 +259,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.gf_ident.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gf_ident.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.nfc.sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nfc.sec.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.vtservice_hidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_hidl.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/lbs_hidl_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lbs_hidl_service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/memtrack-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack-mediatek.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/motorola.hardware.camera.imgtuner.aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.imgtuner.aidl-service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/networksetting.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/networksetting.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/tee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/tetheroffloadservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tetheroffloadservice.rc \
@@ -1800,7 +1797,6 @@ PRODUCT_PACKAGES += \
     init.mmi.shutdown \
     init.mmi.touch \
     init.oem.fingerprint2 \
-    ipsec_mon \
     kpgather \
     kpreadwrite \
     lbs_hidl_service \
@@ -1812,7 +1808,6 @@ PRODUCT_PACKAGES += \
     v3avpud.mt6855 \
     mtk_agpsd \
     muxreport \
-    netdagent \
     nvram_daemon \
     pnscr \
     pnscr_cal \
