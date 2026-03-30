@@ -294,7 +294,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/mot_spn_table:$(TARGET_COPY_OUT_VENDOR)/etc/mot_spn_table \
     vendor/motorola/cancunf/proprietary/vendor/etc/motorola/sensors/mot_sensor_settings.json:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/sensors/mot_sensor_settings.json \
     vendor/motorola/cancunf/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
-    vendor/motorola/cancunf/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
     vendor/motorola/cancunf/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/motorola/cancunf/proprietary/vendor/etc/nfc_calibration.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nfc_calibration.txt \
     vendor/motorola/cancunf/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
@@ -1038,7 +1037,6 @@ PRODUCT_PACKAGES += \
     libFrameRecord \
     libJpgEncPipe \
     libMtkAinrEnh \
-    libMtkOmxCore \
     libNoFpsActor \
     libOpenCL \
     libSQLiteModule_VER_ALL \
@@ -1059,17 +1057,11 @@ PRODUCT_PACKAGES += \
     libccci_util \
     libcmdl \
     libcmdl_ndk.mtk.vndk \
-    libcodec2_mtk_c2store \
-    libcodec2_mtk_vdec \
-    libcodec2_mtk_venc \
-    libcodec2_vpp_qt_plugin \
-    libcodec2_vpp_rs_plugin \
     libconnfem \
     libcustom_nvram \
     libdre \
     libdynamiclog \
     libfile_op \
-    libformatter \
     libged \
     libgpu_aux \
     libgpud \
@@ -1078,9 +1070,7 @@ PRODUCT_PACKAGES += \
     libgralloctypes_mtk \
     libgz_gp_client \
     libgz_uree \
-    libhdrvideo \
     libhevce_sb.ca7.android \
-    libicd_decoder \
     libimgsensorca \
     libion_mtk \
     libion_ulit \
@@ -1132,7 +1122,6 @@ PRODUCT_PACKAGES += \
     libscltm \
     libsimlock \
     libsimmelock \
-    libstagefrighthw \
     libstorage_otp \
     libsysenv \
     libtflite_mtk_vendor \
@@ -1267,17 +1256,10 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.8 \
     vendor.mediatek.hardware.pq@2.9 \
     libHEVCdec_sa.ca7.android \
-    libMtkOmxAdpcmDec \
-    libMtkOmxAlacDec \
-    libMtkOmxApeDec \
-    libMtkOmxGsmDec \
-    libMtkOmxMp3Dec \
-    libadpcmdec_mtk \
     libh264dec_customize \
     libh264dec_sa.ca7 \
     libh264dec_sd.ca7 \
     libh264dec_se.ca7 \
-    libmp3dec_mtk \
     libmp4enc_sa.ca7 \
     librcs_interface \
     librcs_volte_core \
@@ -1385,6 +1367,11 @@ PRODUCT_PACKAGES += \
     libcamalgo.platform \
     libcamalgo.vsdofUtil \
     libcamalgo.warp \
+    libcodec2_mtk_c2store \
+    libcodec2_mtk_vdec \
+    libcodec2_mtk_venc \
+    libcodec2_vpp_qt_plugin \
+    libcodec2_vpp_rs_plugin \
     libcomposer_ext \
     libcvsd_mtk \
     libdecrypt \
@@ -1392,6 +1379,7 @@ PRODUCT_PACKAGES += \
     libfft_vendor \
     libfgauge_gm30 \
     libforkexecwrap \
+    libformatter \
     libfp_ext_svc2 \
     libfpc.sensortest.hal \
     libgf_ca \
@@ -1400,10 +1388,12 @@ PRODUCT_PACKAGES += \
     libgwsd-ril \
     libgwsdv2-ril \
     libgwsdv3-ril \
+    libhdrvideo \
     libheichal \
     libhfmanager \
     libhfmanagerwrapper \
     libhwm \
+    libicd_decoder \
     libifcutils_mtk \
     libimagebuffer_wrapper \
     libkmsetkey \

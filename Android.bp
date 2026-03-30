@@ -24425,53 +24425,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libMtkOmxCore",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libMtkOmxCore.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "libcutils",
-                "libui",
-                "libion",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libMtkOmxCore.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "libcutils",
-                "libui",
-                "libion",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libNoFpsActor",
     owner: "motorola",
     strip: {
@@ -25256,337 +25209,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcodec2_mtk_c2store",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_mtk_c2store.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common",
-                "libcutils",
-                "liblog",
-                "libsfplugin_ccodec_utils",
-                "libstagefright_foundation",
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk",
-                "libutils",
-                "libion",
-                "libion_mtk",
-                "libdmabufheap",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_mtk_c2store.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common",
-                "libcutils",
-                "liblog",
-                "libsfplugin_ccodec_utils",
-                "libstagefright_foundation",
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk",
-                "libutils",
-                "libion",
-                "libion_mtk",
-                "libdmabufheap",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_mtk_vdec",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_mtk_vdec.so",
-            ],
-            shared_libs: [
-                "libformatter",
-                "libdpframework",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "libui",
-                "libgralloc_extra",
-                "libexpat",
-                "libsync",
-                "libhidlbase",
-                "libhwbinder",
-                "libged",
-                "libcodec2_soft_common",
-                "libcutils",
-                "liblog",
-                "libsfplugin_ccodec_utils",
-                "libstagefright_foundation",
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk",
-                "libutils",
-                "libion",
-                "libdmabufheap",
-                "libion_mtk",
-                "libcodec2_mtk_c2store",
-                "libcodec2_vpp_qt_plugin",
-                "libcodec2_vpp_rs_plugin",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_mtk_vdec.so",
-            ],
-            shared_libs: [
-                "libformatter",
-                "libdpframework",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "libui",
-                "libgralloc_extra",
-                "libexpat",
-                "libsync",
-                "libhidlbase",
-                "libhwbinder",
-                "libged",
-                "libcodec2_soft_common",
-                "libcutils",
-                "liblog",
-                "libsfplugin_ccodec_utils",
-                "libstagefright_foundation",
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk",
-                "libutils",
-                "libion",
-                "libdmabufheap",
-                "libion_mtk",
-                "libcodec2_mtk_c2store",
-                "libcodec2_vpp_qt_plugin",
-                "libcodec2_vpp_rs_plugin",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_mtk_venc",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_mtk_venc.so",
-            ],
-            shared_libs: [
-                "libformatter",
-                "libdpframework",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "libui",
-                "libgralloc_extra",
-                "libexpat",
-                "libsync",
-                "libhidlbase",
-                "libhwbinder",
-                "libged",
-                "libcodec2_soft_common",
-                "libcutils",
-                "liblog",
-                "libsfplugin_ccodec_utils",
-                "libstagefright_foundation",
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk",
-                "libutils",
-                "libion",
-                "libdmabufheap",
-                "libion_mtk",
-                "libcodec2_mtk_c2store",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_mtk_venc.so",
-            ],
-            shared_libs: [
-                "libformatter",
-                "libdpframework",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "libui",
-                "libgralloc_extra",
-                "libexpat",
-                "libsync",
-                "libhidlbase",
-                "libhwbinder",
-                "libged",
-                "libcodec2_soft_common",
-                "libcutils",
-                "liblog",
-                "libsfplugin_ccodec_utils",
-                "libstagefright_foundation",
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk",
-                "libutils",
-                "libion",
-                "libdmabufheap",
-                "libion_mtk",
-                "libcodec2_mtk_c2store",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_vpp_qt_plugin",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_vpp_qt_plugin.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common",
-                "libsfplugin_ccodec_utils",
-                "libstagefright_foundation",
-                "libcodec2",
-                "libcodec2_vndk",
-                "liblog",
-                "libbase",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_vpp_qt_plugin.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common",
-                "libsfplugin_ccodec_utils",
-                "libstagefright_foundation",
-                "libcodec2",
-                "libcodec2_vndk",
-                "liblog",
-                "libbase",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_vpp_rs_plugin",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_vpp_rs_plugin.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common",
-                "libsfplugin_ccodec_utils",
-                "libstagefright_foundation",
-                "libcodec2",
-                "libcodec2_vndk",
-                "liblog",
-                "libbase",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_vpp_rs_plugin.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common",
-                "libsfplugin_ccodec_utils",
-                "libstagefright_foundation",
-                "libcodec2",
-                "libcodec2_vndk",
-                "liblog",
-                "libbase",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libconnfem",
     owner: "motorola",
     strip: {
@@ -25763,57 +25385,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libnvram",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libformatter",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libformatter.so",
-            ],
-            shared_libs: [
-                "libion_mtk",
-                "libdmabufheap",
-                "libutils",
-                "libion",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "libutilscallstack",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libformatter.so",
-            ],
-            shared_libs: [
-                "libion_mtk",
-                "libdmabufheap",
-                "libutils",
-                "libion",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "libutilscallstack",
                 "libc++",
                 "libc",
                 "libm",
@@ -26238,43 +25809,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhdrvideo",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libhdrvideo.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhdrvideo.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libhevce_sb.ca7.android",
     owner: "motorola",
     strip: {
@@ -26309,47 +25843,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
     check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libicd_decoder",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libicd_decoder.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libhidlbase",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libicd_decoder.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libhidlbase",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
     prefer: true,
     soc_specific: true,
 }
@@ -28455,51 +27948,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libstagefrighthw",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libstagefrighthw.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libui",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libstagefrighthw.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libui",
                 "libc++",
                 "libc",
                 "libm",
@@ -35766,174 +35214,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libMtkOmxAdpcmDec",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libMtkOmxAdpcmDec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libadpcmdec_mtk",
-                "libmtk_drvb",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libMtkOmxAlacDec",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libMtkOmxAlacDec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libMtkOmxApeDec",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libMtkOmxApeDec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "libui",
-                "liblog",
-                "libaudioutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libMtkOmxGsmDec",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libMtkOmxGsmDec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libMtkOmxMp3Dec",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libMtkOmxMp3Dec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libmp3dec_mtk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libadpcmdec_mtk",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libadpcmdec_mtk.so",
-            ],
-            shared_libs: [
-                "libmtk_drvb",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libh264dec_customize",
     owner: "motorola",
     strip: {
@@ -36043,34 +35323,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "32",
     check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmp3dec_mtk",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmp3dec_mtk.so",
-            ],
-            shared_libs: [
-                "libmtk_drvb",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
     prefer: true,
     soc_specific: true,
 }
@@ -39279,6 +38531,204 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcodec2_mtk_c2store",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_mtk_c2store.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common",
+                "libcutils",
+                "liblog",
+                "libsfplugin_ccodec_utils",
+                "libstagefright_foundation",
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk",
+                "libutils",
+                "libion",
+                "libion_mtk",
+                "libdmabufheap",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_mtk_vdec",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_mtk_vdec.so",
+            ],
+            shared_libs: [
+                "libformatter",
+                "libdpframework",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libui",
+                "libgralloc_extra",
+                "libexpat",
+                "libsync",
+                "libhidlbase",
+                "libhwbinder",
+                "libged",
+                "libcodec2_soft_common",
+                "libcutils",
+                "liblog",
+                "libsfplugin_ccodec_utils",
+                "libstagefright_foundation",
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk",
+                "libutils",
+                "libion",
+                "libdmabufheap",
+                "libion_mtk",
+                "libcodec2_mtk_c2store",
+                "libcodec2_vpp_qt_plugin",
+                "libcodec2_vpp_rs_plugin",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_mtk_venc",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_mtk_venc.so",
+            ],
+            shared_libs: [
+                "libformatter",
+                "libdpframework",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libui",
+                "libgralloc_extra",
+                "libexpat",
+                "libsync",
+                "libhidlbase",
+                "libhwbinder",
+                "libged",
+                "libcodec2_soft_common",
+                "libcutils",
+                "liblog",
+                "libsfplugin_ccodec_utils",
+                "libstagefright_foundation",
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk",
+                "libutils",
+                "libion",
+                "libdmabufheap",
+                "libion_mtk",
+                "libcodec2_mtk_c2store",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_vpp_qt_plugin",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_vpp_qt_plugin.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common",
+                "libsfplugin_ccodec_utils",
+                "libstagefright_foundation",
+                "libcodec2",
+                "libcodec2_vndk",
+                "liblog",
+                "libbase",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_vpp_rs_plugin",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_vpp_rs_plugin.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common",
+                "libsfplugin_ccodec_utils",
+                "libstagefright_foundation",
+                "libcodec2",
+                "libcodec2_vndk",
+                "liblog",
+                "libbase",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcomposer_ext",
     owner: "motorola",
     strip: {
@@ -39454,6 +38904,38 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libformatter",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libformatter.so",
+            ],
+            shared_libs: [
+                "libion_mtk",
+                "libdmabufheap",
+                "libutils",
+                "libion",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libutilscallstack",
                 "libc++",
                 "libc",
                 "libm",
@@ -39710,6 +39192,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libhdrvideo",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libhdrvideo.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libheichal",
     owner: "motorola",
     strip: {
@@ -39808,6 +39315,33 @@ cc_prebuilt_library_shared {
                 "libnvram",
                 "liblog",
                 "libfile_op",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libicd_decoder",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libicd_decoder.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libhidlbase",
+                "liblog",
                 "libc++",
                 "libc",
                 "libm",
