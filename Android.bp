@@ -44452,31 +44452,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmemtrack_GL",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6855/libmemtrack_GL.so",
-            ],
-            shared_libs: [
-                "libsrv_um",
-                "liblog",
-                "libm",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "mt6855",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmfllcore",
     owner: "motorola",
     strip: {
@@ -50821,15 +50796,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "memtrack-mediatek.xml",
-    owner: "motorola",
-    src: "proprietary/vendor/etc/vintf/manifest/memtrack-mediatek.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "motorola.hardware.camera.imgtuner.aidl.xml",
     owner: "motorola",
     src: "proprietary/vendor/etc/vintf/manifest/motorola.hardware.camera.imgtuner.aidl.xml",
@@ -51333,38 +51299,6 @@ cc_prebuilt_binary {
                 "libcodec2_mtk_c2store",
                 "libcodec2_mtk_vdec",
                 "libcodec2_mtk_venc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.memtrack-service.mediatek",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.memtrack-service.mediatek",
-            ],
-            shared_libs: [
-                "libbase",
-                "libutils",
-                "liblog",
-                "libbinder_ndk",
-                "android.hardware.memtrack-V1-ndk",
-                "libhardware",
-                "libhardware_legacy",
                 "libc++",
                 "libc",
                 "libm",
@@ -54723,13 +54657,6 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/liblpcnr.so",
     symlink_target: "/vendor/lib64/mt6855/liblpcnr.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_libmemtrack_GL_so",
-    soc_specific: true,
-    installed_location: "lib64/libmemtrack_GL.so",
-    symlink_target: "/vendor/lib64/mt6855/libmemtrack_GL.so",
 }
 
 install_symlink {

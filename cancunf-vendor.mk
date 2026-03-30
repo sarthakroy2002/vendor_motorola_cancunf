@@ -260,7 +260,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.nfc.sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nfc.sec.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/init.vtservice_aidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_aidl.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/lbs_hidl_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lbs_hidl_service.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/memtrack-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack-mediatek.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/motorola.hardware.camera.imgtuner.aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.imgtuner.aidl-service.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
@@ -1551,7 +1550,6 @@ PRODUCT_PACKAGES += \
     libimageio_plat_drv \
     libimageio_plat_pipe \
     liblpcnr \
-    libmemtrack_GL \
     libmfllcore \
     libmnl \
     libmsnr \
@@ -1739,7 +1737,6 @@ PRODUCT_PACKAGES += \
     manifest_cameraprovider.xml \
     manifest_hwcomposer.xml \
     manifest_media_c2_V1_2_default.xml \
-    memtrack-mediatek.xml \
     motorola.hardware.camera.imgtuner.aidl.xml \
     SN1X0__RF-On.txt \
     autobt \
@@ -1759,7 +1756,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gnss-service.mediatek \
     android.hardware.media.c2@1.2-mediatek-64b \
-    android.hardware.memtrack-service.mediatek \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.nfc@1.2-service.sec \
     android.hardware.secure_element@1.2-service-mediatek \
@@ -2080,7 +2076,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libimageio_plat_drv_so \
     vendor_lib64_libimageio_plat_pipe_so \
     vendor_lib64_liblpcnr_so \
-    vendor_lib64_libmemtrack_GL_so \
     vendor_lib64_libmfllcore_so \
     vendor_lib64_libmnl_so \
     vendor_lib64_libmpvr_so \
