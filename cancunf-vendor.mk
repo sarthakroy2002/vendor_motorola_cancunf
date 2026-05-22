@@ -1778,7 +1778,6 @@ PRODUCT_PACKAGES += \
     init.mmi.modem-rfs \
     init.mmi.shutdown \
     init.mmi.touch \
-    init.oem.fingerprint2 \
     kpgather \
     kpreadwrite \
     lbs_hidl_service \

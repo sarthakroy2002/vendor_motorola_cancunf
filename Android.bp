@@ -51933,14 +51933,6 @@ sh_binary {
     soc_specific: true,
 }
 
-sh_binary {
-    name: "init.oem.fingerprint2",
-    owner: "motorola",
-    src: "proprietary/vendor/bin/init.oem.fingerprint2.sh",
-    filename: "init.oem.fingerprint2.sh",
-    soc_specific: true,
-}
-
 cc_prebuilt_binary {
     name: "kpgather",
     owner: "motorola",
