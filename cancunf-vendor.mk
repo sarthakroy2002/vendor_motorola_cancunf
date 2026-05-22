@@ -236,7 +236,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cancunf/proprietary/vendor/etc/init.insmod.mt6855.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6855.cfg \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-goodixservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-goodixservice.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-chipone2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-chipone2.rc \
-    vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/motorola/cancunf/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
@@ -1380,7 +1379,6 @@ PRODUCT_PACKAGES += \
     libforkexecwrap \
     libformatter \
     libfp_ext_svc2 \
-    libfpc.sensortest.hal \
     libgf_ca \
     libgf_hal \
     libgoodixhwfingerprint \
@@ -1752,7 +1750,6 @@ PRODUCT_PACKAGES += \
     hardware_revisions \
     android.hardware.biometrics.fingerprint@2.1-goodixservice \
     android.hardware.biometrics.fingerprint@2.1-service-chipone \
-    android.hardware.biometrics.fingerprint@2.1-service-fpc \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gnss-service.mediatek \
     android.hardware.media.c2@1.2-mediatek-64b \
@@ -1761,7 +1758,6 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint-service.trustonic \
     chipone_ident \
-    fpc_ident \
     goodix_ident \
     motorola.hardware.camera.imgtuner.aidl-service \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6855 \

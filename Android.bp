@@ -38983,35 +38983,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libfpc.sensortest.hal",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libfpc.sensortest.hal.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libhidlbase",
-                "libhidltransport",
-                "com.fingerprints.extension@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libgf_ca",
     owner: "motorola",
     strip: {
@@ -51164,39 +51135,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.biometrics.fingerprint@2.1-service-fpc",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-fpc",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libutils",
-                "android.hardware.biometrics.fingerprint@2.1",
-                "libhwbinder",
-                "libcutils",
-                "libMcClient",
-                "com.motorola.hardware.biometric.fingerprint@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "android.hardware.drm@1.4-service.widevine",
     owner: "motorola",
     target: {
@@ -51471,36 +51409,6 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "fpc_ident",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/fpc_ident",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libion",
-                "libcutils",
-                "libMcClient",
                 "libc++",
                 "libc",
                 "libm",
