@@ -51400,63 +51400,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "chipone_ident",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/chipone_ident",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "goodix_ident",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/goodix_ident",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libgf_hal",
-                "libgf_ca",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-                "libbinder",
-                "libutils",
-                "libc++",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "motorola.hardware.camera.imgtuner.aidl-service",
     owner: "motorola",
     target: {
