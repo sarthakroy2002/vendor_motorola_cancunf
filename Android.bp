@@ -51821,14 +51821,6 @@ cc_prebuilt_binary {
 }
 
 sh_binary {
-    name: "init.insmod",
-    owner: "motorola",
-    src: "proprietary/vendor/bin/init.insmod.sh",
-    filename: "init.insmod.sh",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "init.mmi.backup.trustlet",
     owner: "motorola",
     src: "proprietary/vendor/bin/init.mmi.backup.trustlet.sh",
