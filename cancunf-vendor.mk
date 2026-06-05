@@ -1769,7 +1769,6 @@ PRODUCT_PACKAGES += \
     init.mmi.backup.trustlet \
     init.mmi.block_perm \
     init.mmi.boot \
-    init.mmi.shutdown \
     init.mmi.touch \
     kpgather \
     kpreadwrite \

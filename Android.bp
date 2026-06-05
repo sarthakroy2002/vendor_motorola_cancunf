@@ -51845,14 +51845,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.mmi.shutdown",
-    owner: "motorola",
-    src: "proprietary/vendor/bin/init.mmi.shutdown.sh",
-    filename: "init.mmi.shutdown.sh",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "init.mmi.touch",
     owner: "motorola",
     src: "proprietary/vendor/bin/init.mmi.touch.sh",
