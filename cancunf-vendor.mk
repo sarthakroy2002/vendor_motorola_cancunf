@@ -1770,8 +1770,6 @@ PRODUCT_PACKAGES += \
     init.mmi.block_perm \
     init.mmi.boot \
     init.mmi.touch \
-    kpgather \
-    kpreadwrite \
     lbs_hidl_service \
     mcDriverDaemon \
     mnld \
