@@ -51845,14 +51845,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.mmi.modem-rfs",
-    owner: "motorola",
-    src: "proprietary/vendor/bin/init.mmi.modem-rfs.sh",
-    filename: "init.mmi.modem-rfs.sh",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "init.mmi.shutdown",
     owner: "motorola",
     src: "proprietary/vendor/bin/init.mmi.shutdown.sh",
