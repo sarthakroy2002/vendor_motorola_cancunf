@@ -1782,7 +1782,6 @@ PRODUCT_PACKAGES += \
     nvram_daemon \
     pnscr \
     pnscr_cal \
-    pstore_annotate \
     rcs_volte_stack \
     rt5512_calibration \
     sec_nfc_test \

@@ -52206,14 +52206,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-sh_binary {
-    name: "pstore_annotate",
-    owner: "motorola",
-    src: "proprietary/vendor/bin/pstore_annotate.sh",
-    filename: "pstore_annotate.sh",
-    soc_specific: true,
-}
-
 cc_prebuilt_binary {
     name: "rcs_volte_stack",
     owner: "motorola",
